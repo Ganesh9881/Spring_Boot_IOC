@@ -14,7 +14,7 @@ public class PayrollOperationsController
 	@Autowired
 	private  IEmployeeMgmtService  empService;
 	
-	public    List<Employee>   getEmployeesByDesgs(String desg1,String desg2,String desg3 ) throws Exception{
+	public    List<Employee> getEmployeesByDesgs(String desg1,String desg2,String desg3 ) throws Exception{
 		System.out.println("PayrollOperationsController.getEmployeesByDesgs()");
 		 //use service
 		List<Employee>  list=empService.fetchEmployeesByDesgs(desg1, desg2, desg3);
